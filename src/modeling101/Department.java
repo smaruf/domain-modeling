@@ -2,9 +2,13 @@ package modeling101;
 
 import java.util.Set;
 
-public class Course {
+/**
+ * @author maruf
+ * @since 10/16/17
+ */
+public class Department
+{
     Set<Student> students;
     Set<Teacher> teachers;
-    Set<TimeSchedule> times;
-    Department department;
+    Set<Course> courses;
 }

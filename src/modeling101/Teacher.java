@@ -6,6 +6,5 @@ public class Teacher {
     Set<Student> students;
     Set<Course> courses;
     Set<TimeSchedule> times;
-    Set<Examination> exams;
-    Set<Book> books;
+    Department department;
 }

@@ -5,7 +5,5 @@ import java.util.Set;
 public class Student {
     Set<Course> courses;
     Set<Teacher> teachers;
-    Set<Examination> exams;
-    Set<Book> books;
-    Set<Grade> grades;
+    Department department;
 }
