@@ -2,10 +2,10 @@ package modeling101;
 
 import java.util.Set;
 
-public class Student implements StudentInfo {
-    Set<CourseInfo> courses;
-    Set<TeacherInfo> teachers;
-    Set<ExaminationInfo> exams;
-    Set<BookInfo> books;
-    Set<GradeInfo> grades;
+public class Student {
+    Set<Course> courses;
+    Set<Teacher> teachers;
+    Set<Examination> exams;
+    Set<Book> books;
+    Set<Grade> grades;
 }

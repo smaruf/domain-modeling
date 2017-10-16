@@ -1,6 +1,6 @@
 package modeling101;
 
-public class ClassRoom implements ClassRoomInfo {
+public class ClassRoom {
     Integer roomNumber;
     Integer buildingNumber;
     Integer availableFrom;

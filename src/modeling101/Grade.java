@@ -1,8 +1,8 @@
 package modeling101;
 
-public class Grade implements GradeInfo {
-    StudentInfo student;
+public class Grade {
+    Student student;
     Double gradePoint;
-    ExaminationInfo exam;
+    Examination exam;
     String subject;
 }

@@ -4,110 +4,84 @@ import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.Set;
 
-//student*-----*course
-//teacher*-----*course
-//course------fee
-//course-----*classroom
-//course-----*time
-//course-----*exam
-//student-----*exam
-//teacher------*exam
-//course-------*books
-//student-------*books
-//teacher-------*books
-//student-------*grade
-//grade-------exam
+//student*<----->*course
+//teacher*<----->*course
+//course<------>fee
+//course----->*classroom
+//course----->*time
+//course----->*exam
+//student----->*exam
+//teacher------>*exam
+//course------->*books
+//student------->*books
+//teacher------->*books
+//student------->*grade
+//grade------->exam
 
-interface StudentInfo {
+
+class Student {
+    Set<Course> courses;
+    Set<Teacher> teachers;
+    Set<Examination> exams;
+    Set<Book> books;
+    Set<Grade> grades;
 }
 
-interface CourseInfo {
+class Course {
+    Set<Student> students;
+    Set<Teacher> teachers;
+    Fee fee;
+    Set<ClassRoom> classRooms;
+    Set<TimeSchedule> times;
+    Set<Book> books;
 }
 
-interface TeacherInfo {
+class Teacher {
+    Set<Student> students;
+    Set<Course> courses;
+    Set<TimeSchedule> times;
+    Set<Examination> exams;
+    Set<Book> books;
 }
 
-interface FeeInfo {
-}
-
-interface ClassRoomInfo {
-}
-
-interface TimeInfo {
-}
-
-interface ExaminationInfo {
-}
-
-interface BookInfo {
-}
-
-interface GradeInfo {
-}
-
-class Student implements StudentInfo {
-    Set<CourseInfo> courses;
-    Set<TeacherInfo> teachers;
-    Set<ExaminationInfo> exams;
-    Set<BookInfo> books;
-    Set<GradeInfo> grades;
-}
-
-class Course implements CourseInfo {
-    Set<StudentInfo> students;
-    Set<TeacherInfo> teachers;
-    FeeInfo fee;
-    Set<ClassRoomInfo> classRooms;
-    Set<TimeInfo> times;
-    Set<BookInfo> books;
-}
-
-class Teacher implements TeacherInfo {
-    Set<StudentInfo> students;
-    Set<CourseInfo> courses;
-    Set<TimeInfo> times;
-    Set<ExaminationInfo> exams;
-    Set<BookInfo> books;
-}
-
-class TimeSchedule implements TimeInfo {
+class TimeSchedule {
     LocalDateTime starting;
     LocalDateTime ending;
 }
 
-class ClassRoom implements ClassRoomInfo {
+class ClassRoom {
     Integer roomNumber;
     Integer buildingNumber;
     Integer availableFrom;
     Integer availableTo;
 }
 
-class Book implements BookInfo {
+class Book {
     String subject;
     String title;
     String writer;
     String briefContents;
 }
 
-class Examination implements ExaminationInfo {
+class Examination {
     LocalDateTime starting;
     LocalDateTime ending;
     String subject;
-    CourseInfo course;
+    Course course;
 }
 
-class Grade implements GradeInfo {
-    StudentInfo student;
+class Grade {
+    Student student;
     Double gradePoint;
-    ExaminationInfo exam;
+    Examination exam;
     String subject;
 }
 
-class Fee implements FeeInfo {
+class Fee {
     LocalDate staring;
     LocalDate ending;
     String currency;
     Double amount;
-    CourseInfo course;
+    Course course;
 }
 
