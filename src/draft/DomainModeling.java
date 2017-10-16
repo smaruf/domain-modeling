@@ -34,6 +34,7 @@ class Course {
     Set<ClassRoom> classRooms;
     Set<TimeSchedule> times;
     Set<Book> books;
+    Set<Examination> exams;
 }
 
 class Teacher {
