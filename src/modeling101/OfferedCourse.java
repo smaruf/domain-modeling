@@ -6,7 +6,8 @@ import java.util.Set;
  * @author maruf
  * @since 10/17/17
  */
-public class Course {
+public class OfferedCourse {
     Set<Teacher> teachers;
-    Set<Department> departments;
+    Set<Semester> semesters;
+    Course course;
 }

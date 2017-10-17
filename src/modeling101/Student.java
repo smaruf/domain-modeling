@@ -2,8 +2,11 @@ package modeling101;
 
 import java.util.Set;
 
+/**
+ * @author maruf
+ * @since 10/17/17
+ */
 public class Student {
-    Set<Course> courses;
-    Set<Teacher> teachers;
     Department department;
+    Set<CourseEnrollment> courseEnrollments;
 }
