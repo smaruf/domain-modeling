@@ -1,5 +1,6 @@
 package main.modeling102.service.impl;
 
+import main.modeling102.model.Idea;
 import main.modeling102.repository.IdeaFileSerializer;
 import main.modeling102.service.IdeaService;
 
@@ -19,4 +20,8 @@ public class IdeaServiceSerializerImpl implements IdeaService {
         return ideaService;
     }
 
+    @Override
+    public Idea addNewIdea(Idea idea) {
+        return null;
+    }
 }
