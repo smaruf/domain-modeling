@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>main.modeling101.Course</OriginalElement>
+  <nodes>
+    <node x="137.81666666666666" y="395.0">main.modeling101.Student</node>
+    <node x="8.259722222222223" y="316.0">main.modeling101.Department</node>
+    <node x="32.00972222222222" y="0.0">main.modeling101.Semester</node>
+    <node x="148.25972222222222" y="316.0">main.modeling101.CourseEnrollment</node>
+    <node x="49.75972222222222" y="79.0">main.modeling101.OfferedCourse</node>
+    <node x="74.54444444444444" y="158.0">main.modeling101.Teacher</node>
+    <node x="10.5" y="237.0">main.modeling101.Course</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="main.modeling101.CourseEnrollment" target="main.modeling101.OfferedCourse">
+      <point x="0.0" y="-14.5" />
+      <point x="227.25972222222222" y="133.0" />
+      <point x="171.38472222222222" y="133.0" />
+      <point x="52.125" y="14.5" />
+    </edge>
+    <edge source="main.modeling101.Teacher" target="main.modeling101.Department">
+      <point x="32.33333333333334" y="14.5" />
+      <point x="155.3777777777778" y="212.0" />
+      <point x="134.04444444444442" y="212.0" />
+      <point x="134.04444444444442" y="296.0" />
+      <point x="116.25972222222222" y="296.0" />
+      <point x="48.0" y="-14.5" />
+    </edge>
+    <edge source="main.modeling101.Course" target="main.modeling101.Teacher">
+      <point x="23.0" y="-14.5" />
+      <point x="79.5" y="212.0" />
+      <point x="90.7111111111111" y="212.0" />
+      <point x="-32.33333333333334" y="14.5" />
+    </edge>
+    <edge source="main.modeling101.CourseEnrollment" target="main.modeling101.Student">
+      <point x="39.5" y="14.5" />
+      <point x="266.7597222222222" y="370.0" />
+      <point x="218.65" y="370.0" />
+      <point x="32.33333333333334" y="-14.5" />
+    </edge>
+    <edge source="main.modeling101.Department" target="main.modeling101.Teacher">
+      <point x="24.0" y="-14.5" />
+      <point x="92.25972222222222" y="286.0" />
+      <point x="123.04444444444444" y="286.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="main.modeling101.Student" target="main.modeling101.Department">
+      <point x="-32.33333333333334" y="-14.5" />
+      <point x="153.98333333333332" y="370.0" />
+      <point x="68.25972222222222" y="370.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="main.modeling101.Semester" target="main.modeling101.OfferedCourse">
+      <point x="35.0" y="14.5" />
+      <point x="119.50972222222222" y="54.0" />
+      <point x="154.00972222222222" y="54.0" />
+      <point x="34.75" y="-14.5" />
+    </edge>
+    <edge source="main.modeling101.Student" target="main.modeling101.CourseEnrollment">
+      <point x="-7.105427357601002E-15" y="-14.5" />
+      <point x="186.31666666666666" y="370.0" />
+      <point x="187.75972222222222" y="370.0" />
+      <point x="-39.5" y="14.5" />
+    </edge>
+    <edge source="main.modeling101.OfferedCourse" target="main.modeling101.Semester">
+      <point x="-34.75" y="-14.5" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="main.modeling101.OfferedCourse" target="main.modeling101.Teacher">
+      <point x="17.375" y="14.5" />
+      <point x="136.63472222222222" y="133.0" />
+      <point x="147.29444444444442" y="133.0" />
+      <point x="24.25" y="-14.5" />
+    </edge>
+    <edge source="main.modeling101.Department" target="main.modeling101.Semester">
+      <point x="-48.0" y="-14.5" />
+      <point x="20.259722222222223" y="296.0" />
+      <point x="0.0" y="296.0" />
+      <point x="0.0" y="54.0" />
+      <point x="49.50972222222222" y="54.0" />
+      <point x="-35.0" y="14.5" />
+    </edge>
+    <edge source="main.modeling101.Department" target="main.modeling101.Course">
+      <point x="-24.0" y="-14.5" />
+      <point x="44.25972222222222" y="296.0" />
+      <point x="33.5" y="296.0" />
+      <point x="-23.0" y="14.5" />
+    </edge>
+    <edge source="main.modeling101.Teacher" target="main.modeling101.OfferedCourse">
+      <point x="-24.25" y="-14.5" />
+      <point x="98.79444444444444" y="133.0" />
+      <point x="101.88472222222222" y="133.0" />
+      <point x="-17.375" y="14.5" />
+    </edge>
+    <edge source="main.modeling101.OfferedCourse" target="main.modeling101.Course">
+      <point x="-52.125" y="14.5" />
+      <point x="67.13472222222222" y="133.0" />
+      <point x="33.5" y="133.0" />
+      <point x="-23.0" y="-14.5" />
+    </edge>
+    <edge source="main.modeling101.Course" target="main.modeling101.Department">
+      <point x="23.0" y="14.5" />
+      <point x="79.5" y="296.0" />
+      <point x="68.25972222222222" y="296.0" />
+      <point x="0.0" y="-14.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="153.5" y="212.0" />
+  <SelectedNodes>
+    <node>main.modeling101.Course</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
