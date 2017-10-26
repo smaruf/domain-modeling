@@ -1,0 +1,25 @@
+package main.modeling102.model;
+
+import lombok.Builder;
+import lombok.Getter;
+import lombok.Setter;
+
+import java.util.Set;
+
+/**
+ * @author maruf
+ * @since 10/19/17
+ */
+@Setter
+@Getter
+public class Comment extends TextContribution {
+    private Idea idea;
+    private Set<Comment> replies;
+
+    @Builder
+    public Comment(User user, Set<Vote> votes, Idea idea, Set<Comment> replies) {
+        super(user, votes);
+        this.idea = idea;
+        this.replies = replies;
+    }
+}

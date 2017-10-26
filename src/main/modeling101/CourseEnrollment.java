@@ -1,4 +1,4 @@
-package modeling101;
+package main.modeling101;
 
 /**
  * @author maruf

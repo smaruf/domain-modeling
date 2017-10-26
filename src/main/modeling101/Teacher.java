@@ -1,4 +1,4 @@
-package modeling101;
+package main.modeling101;
 
 import java.util.Set;
 
@@ -6,7 +6,7 @@ import java.util.Set;
  * @author maruf
  * @since 10/17/17
  */
-public class Student {
+public class Teacher {
     Department department;
-    Set<CourseEnrollment> courseEnrollments;
+    Set<OfferedCourse> offeredCourses;
 }
