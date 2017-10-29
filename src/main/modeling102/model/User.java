@@ -1,4 +1,4 @@
-package main.modeling102.model;
+package model;
 
 import lombok.Builder;
 import lombok.Getter;

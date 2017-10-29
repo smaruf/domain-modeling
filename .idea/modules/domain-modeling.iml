@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module external.linked.project.id="domain-modeling" external.linked.project.path="$MODULE_DIR$/../.." external.root.project.path="$MODULE_DIR$/../.." external.system.id="GRADLE" type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$/../..">
+      <sourceFolder url="file://$MODULE_DIR$/../../src/main/modeling102" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../src/main/modeling101" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../src/test/main/modeling102" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../../src/draft" type="java-resource" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="org.projectlombok:lombok:1.16.18" level="application" />
+    <orderEntry type="library" name="junit:junit:4.12" level="project" />
+  </component>
+</module>

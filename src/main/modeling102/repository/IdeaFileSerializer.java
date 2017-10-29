@@ -1,7 +1,8 @@
-package main.modeling102.repository;
+package repository;
 
-import main.modeling102.model.Comment;
-import main.modeling102.model.Idea;
+
+import model.Comment;
+import model.Idea;
 
 import java.io.*;
 import java.util.*;

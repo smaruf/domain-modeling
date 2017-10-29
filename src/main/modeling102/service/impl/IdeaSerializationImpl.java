@@ -1,9 +1,10 @@
-package main.modeling102.service.impl;
+package service.impl;
 
-import main.modeling102.model.Comment;
-import main.modeling102.model.Idea;
-import main.modeling102.repository.IdeaFileSerializer;
-import main.modeling102.service.IdeaService;
+
+import model.Comment;
+import model.Idea;
+import repository.IdeaFileSerializer;
+import service.IdeaService;
 
 import java.util.LinkedHashSet;
 import java.util.List;

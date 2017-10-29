@@ -1,11 +1,11 @@
-package main.modeling102.service;
+package service;
 
-import main.modeling102.model.Comment;
-import main.modeling102.model.Idea;
-import main.modeling102.model.User;
-import main.modeling102.service.impl.IdeaSerializationImpl;
+import model.Comment;
+import model.Idea;
+import model.User;
 import org.junit.Assert;
 import org.junit.Test;
+import service.impl.IdeaSerializationImpl;
 
 import java.util.List;
 
