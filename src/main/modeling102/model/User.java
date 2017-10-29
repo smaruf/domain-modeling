@@ -15,5 +15,6 @@ import java.util.Set;
 @Getter
 @Builder
 public class User implements Serializable {
+    private String userKey;
     private Set<Contribution> contributions;
 }

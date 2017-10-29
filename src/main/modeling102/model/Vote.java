@@ -11,11 +11,11 @@ import lombok.Setter;
 @Setter
 @Getter
 public class Vote extends Contribution {
-    private TextContribution textContributions;
+    private TextContribution textContribution;
 
     @Builder
-    public Vote(User user, TextContribution textContributions) {
+    public Vote(User user, TextContribution textContribution) {
         super(user);
-        this.textContributions = textContributions;
+        this.textContribution = textContribution;
     }
 }

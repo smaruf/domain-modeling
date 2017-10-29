@@ -13,11 +13,12 @@ import java.util.Set;
 @Setter
 @Getter
 public class Idea extends TextContribution {
+    private String title;
     private Set<Comment> comments;
 
     @Builder
-    public Idea(User user, Set<Vote> votes, Set<Comment> comments) {
-        super(user, votes);
+    public Idea(User user, Set<Vote> votes, Set<Comment> comments, String text) {
+        super(user, votes, text);
         this.comments = comments;
     }
 }

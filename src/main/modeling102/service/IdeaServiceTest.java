@@ -19,7 +19,7 @@ public class IdeaServiceTest {
     public void testAddNewIdea() throws Exception {
         User user = User.builder().build();
         Idea idea = Idea.builder().user(user).build();
-        idea = ideaService.addNewIdea(idea);
+        idea = ideaService.saveIdea(idea);
         assert Objects.nonNull(idea);
     }
 
