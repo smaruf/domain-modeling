@@ -16,9 +16,10 @@ public abstract class TextContribution extends Contribution {
     private String key;
     private Set<Vote> votes;
 
-    public TextContribution(User user, Set<Vote> votes, String text) {
+    public TextContribution(User user, Set<Vote> votes, String text, String key) {
         super(user);
         this.votes = votes;
         this.text = text;
+        this.key = key;
     }
 }

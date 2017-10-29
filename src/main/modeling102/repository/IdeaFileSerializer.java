@@ -36,7 +36,7 @@ public enum IdeaFileSerializer {
 
         ideaList = storeList(ideaList);
 
-        return idea;
+        return findIdeaByKey(idea.getKey());
     }
 
     private List<Idea> storeList(List<Idea> ideaList) {

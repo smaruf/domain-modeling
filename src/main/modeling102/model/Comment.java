@@ -15,11 +15,13 @@ import java.util.Set;
 public class Comment extends TextContribution {
     private Idea idea;
     private Set<Comment> replies;
+    private TextContribution replyOn;
 
     @Builder
-    public Comment(User user, String text, Set<Vote> votes, Idea idea, Set<Comment> replies) {
-        super(user, votes, text);
+    public Comment(User user, String text, Set<Vote> votes, Idea idea, Set<Comment> replies, TextContribution replyOn) {
+        super(user, votes, text, null);
         this.idea = idea;
         this.replies = replies;
+        this.replyOn = replyOn;
     }
 }

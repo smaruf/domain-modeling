@@ -18,6 +18,6 @@ public interface IdeaService {
 
     Comment saveComment(Idea idea, Comment comment);
 
-    void replyComment(Comment comment, Comment reply);
+    Comment replyComment(Comment comment, Comment reply);
 
 }

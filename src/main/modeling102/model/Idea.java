@@ -17,8 +17,9 @@ public class Idea extends TextContribution {
     private Set<Comment> comments;
 
     @Builder
-    public Idea(User user, Set<Vote> votes, Set<Comment> comments, String text) {
-        super(user, votes, text);
+    public Idea(User user, Set<Vote> votes, Set<Comment> comments, String text, String key, String title) {
+        super(user, votes, text, key);
         this.comments = comments;
+        this.title = title;
     }
 }

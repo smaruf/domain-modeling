@@ -13,11 +13,11 @@ import java.util.Objects;
  * @author maruf
  * @since 10/26/17
  */
-public class IdeaServiceSerializerImpl implements IdeaService {
-    private static final IdeaService ideaService = new IdeaServiceSerializerImpl();
+public class IdeaSerializationImpl implements IdeaService {
+    private static final IdeaService ideaService = new IdeaSerializationImpl();
     private final IdeaFileSerializer ideaFileSerializer;
 
-    private IdeaServiceSerializerImpl() {
+    private IdeaSerializationImpl() {
         this.ideaFileSerializer = IdeaFileSerializer.getStore();
     }
 
@@ -60,7 +60,7 @@ public class IdeaServiceSerializerImpl implements IdeaService {
     }
 
     @Override
-    public void replyComment(Comment comment, Comment reply) {
+    public Comment replyComment(Comment comment, Comment reply) {
         Objects.requireNonNull(comment.getKey());
         Objects.requireNonNull(comment.getIdea());
         Objects.requireNonNull(comment.getIdea().getKey());
@@ -74,6 +74,6 @@ public class IdeaServiceSerializerImpl implements IdeaService {
         reply.setIdea(savedComment.getIdea());
         savedComment.getReplies().add(reply);
         ideaFileSerializer.saveIdea(savedComment.getIdea());
-
+        return ideaFileSerializer.findCommentByKey(savedComment.getIdea().getKey(), savedComment.getKey());
     }
 }
